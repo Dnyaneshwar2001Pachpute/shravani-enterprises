@@ -52,10 +52,6 @@ export default function Home() {
       </div>
 
 
-
-
-
-
       {/* Hero Image */}
       <div className="mx-auto mt-1 max-w-7xl px-2 sm:px-6 lg:px-8">
       <div className="relative mx-auto h-[560px] w-full sm:h-[650px] md:h-[720px] lg:h-[760px]">
@@ -78,11 +74,11 @@ export default function Home() {
       <div className="mx-auto max-w-6xl text-center">
 
         <h2 className="mb-6 text-3xl font-bold text-[#12304a] md:text-4xl">
-        About Shravani Enterprises
+        About Sharavani Enterprises
         </h2>
 
         <p className="mx-auto max-w-3xl text-lg leading-8 text-gray-600">
-          Shravani Enterpriese provides reliable Waterproofing and civil 
+          Sharavani Enterpriese provides reliable Waterproofing and civil 
           repair Services with a focus on quality, durabiltiy, and 
           customer satisfaction.
         </p>
@@ -294,8 +290,6 @@ export default function Home() {
 
       </div>
 
-          
-
         </div>
       </div>
       </section>
@@ -315,7 +309,7 @@ Get in Touch With Us
 
 
 <p className="mb-8 text-lg text-gray-600">
-Get in touch with Shravani Enterprises for Professional
+Get in touch with Sharavani Enterprises for Professional
 Waterproofing and civil repair services.
 </p>
 
@@ -348,7 +342,7 @@ Email Us
 {/* company  */}
 <div>
   <h3 className="mb-2 text-xl font-bold">
-    SHRAVANI ENTERPRISES
+    SHARAVANI ENTERPRISES
   </h3>
 </div>
 

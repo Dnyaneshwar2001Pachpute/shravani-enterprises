@@ -44,7 +44,7 @@ export default function AboutPage() {
 
             {/* Description */}
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-              Shravani Enterprises is a proprietorship firm based in Pune,
+              Sharavani Enterprises is a proprietorship firm based in Pune,
               Maharashtra, specializing in waterproofing, civil repair and
               structural maintenance services.
             </p>
@@ -53,13 +53,12 @@ export default function AboutPage() {
             <div className="mt-8 flex flex-wrap gap-4">
 
               {/* Consultation Button */}
-              <Link
-                href="/contact"
+              <a
                 className="inline-flex items-center gap-2 rounded-lg bg-[#f58220] px-6 py-3.5 font-semibold text-white transition hover:bg-[#d96f16]"
               >
                 Get a Free Consultation
-                <ArrowRight size={18} />
-              </Link>
+                <ArrowRight size={18} /> 
+              </a>
 
               {/* Call Button */}
               <a
