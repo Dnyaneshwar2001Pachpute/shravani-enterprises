@@ -54,7 +54,8 @@ export default function Navbar() {
             width={170}
             height={60}
             className="h-[60px] w-[70px] object-contain"
-          />
+            style={{width:"70px", height:"auto"}}
+         />
         </Link>
 
         {/* Desktop Navigation */}
