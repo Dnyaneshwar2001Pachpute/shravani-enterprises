@@ -324,7 +324,7 @@ className="rounded-md bg-orange-500 px-8 py-3 font-bold text-white transition ho
 </a>
 
 <a
-href="mailto:contect@example.com"
+href="mailto:shravanienterprises2222@gmail.com"
 className="rounded-md border-2 border-sky-500 px-8 py-3 font-bold text-[#12304a] transition hover:bg-sky-50"
 >
 Email Us

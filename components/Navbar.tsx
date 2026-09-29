@@ -1,9 +1,14 @@
+
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+
 import Image from "next/image";
 import Link from "next/link";
+
 import { Menu, X, Phone } from "lucide-react";
+
 import logo from "@/assets/logo.png";
 
 const menuItems = [
@@ -32,15 +37,19 @@ const menuItems = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Get the current page URL
+  const pathname = usePathname();
+
   const closeMenu = () => {
     setIsOpen(false);
   };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white">
+
       {/* Main Navbar */}
       <div className="flex h-[78px] w-full items-center justify-between px-4 sm:px-6 lg:px-10">
-        
+
         {/* Logo */}
         <Link
           href="/"
@@ -54,21 +63,32 @@ export default function Navbar() {
             width={170}
             height={60}
             className="h-[60px] w-[70px] object-contain"
-            style={{width:"70px", height:"auto"}}
-         />
+            style={{ width: "70px", height: "auto" }}
+          />
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-7 lg:flex">
-          {menuItems.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold text-[#12334b] transition-colors duration-200 hover:text-[#f58220]"
-            >
-              {item.name}
-            </Link>
-          ))}
+
+          {menuItems.map((item) => {
+
+            // Check if this menu item is the current page
+            const isActive = pathname === item.href;
+
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`text-sm font-semibold transition-colors duration-200 ${
+                  isActive
+                    ? "text-[#f58220]"
+                    : "text-[#12334b] hover:text-[#f58220]"
+                }`}
+              >
+                {item.name}
+              </Link>
+            );
+          })}
 
           {/* Get Quote */}
           <Link
@@ -96,17 +116,27 @@ export default function Navbar() {
       {isOpen && (
         <div className="border-t border-gray-200 bg-white shadow-lg lg:hidden">
           <nav className="flex flex-col px-4 py-4">
-            
-            {menuItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                onClick={closeMenu}
-                className="border-b border-gray-100 py-4 text-base font-semibold text-[#12334b] transition-colors hover:text-[#f58220]"
-              >
-                {item.name}
-              </Link>
-            ))}
+
+            {menuItems.map((item) => {
+
+              // Check active page for mobile menu
+              const isActive = pathname === item.href;
+
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={closeMenu}
+                  className={`border-b border-gray-100 py-4 text-base font-semibold transition-colors ${
+                    isActive
+                      ? "text-[#f58220]"
+                      : "text-[#12334b] hover:text-[#f58220]"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
 
             {/* Mobile Get Quote */}
             <Link
@@ -124,3 +154,4 @@ export default function Navbar() {
     </header>
   );
 }
+
