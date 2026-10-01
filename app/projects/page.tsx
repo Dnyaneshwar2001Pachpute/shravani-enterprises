@@ -2,78 +2,80 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 const projects = [
   {
     image: "/projects/project-1.jpg",
     title: "Terrace Waterproofing",
-    category: "Terrace & Roof",
+    category: "Terrace Waterproofing",
     description:
-      "Professional waterproofing treatment designed to protect terrace surfaces from rainwater and seepage.",
+      "Professional terrace waterproofing work designed to protect the surface from rainwater, seepage and leakage.",
   },
   {
     image: "/projects/project-2.jpg",
-    title: "Basement Waterproofing",
-    category: "Basement",
+    title: "Toilet Waterproofing",
+    category: "Toilet & Bathroom",
     description:
-      "Waterproofing solutions for basement walls and floors to help prevent moisture penetration.",
+      "Specialized toilet waterproofing work to prevent water seepage and protect surrounding walls and floors.",
   },
   {
     image: "/projects/project-3.jpg",
-    title: "Roof Waterproofing",
-    category: "Roof",
+    title: "HDPE Waterproofing",
+    category: "HDPE Membrane",
     description:
-      "Durable roof waterproofing application for long-term protection against water leakage.",
+      "HDPE waterproofing membrane installation providing durable protection against water penetration.",
   },
   {
     image: "/projects/project-4.jpg",
-    title: "HDPE Membrane Installation",
-    category: "HDPE Membrane",
+    title: "Garden Break Bat Waterproofing",
+    category: "Garden Waterproofing",
     description:
-      "HDPE membrane installation for below-ground and structural waterproofing applications.",
+      "Waterproofing treatment for garden areas using suitable membrane and protective systems to prevent seepage.",
   },
   {
     image: "/projects/project-5.jpg",
-    title: "Injection Grouting",
-    category: "Repair & Grouting",
+    title: "IPS Terrace Waterproofing",
+    category: "IPS Terrace",
     description:
-      "Targeted injection grouting treatment for cracks, joints and active water leakage points.",
+      "IPS terrace waterproofing work designed to improve water resistance and protect the terrace surface.",
   },
   {
     image: "/projects/project-6.jpg",
-    title: "Lift Pit Waterproofing",
-    category: "Lift Pit",
+    title: "HDPE Waterproofing",
+    category: "HDPE Membrane",
     description:
-      "Specialized waterproofing treatment for lift pits exposed to moisture and groundwater.",
+      "Professional HDPE waterproofing membrane installation for reliable and long-lasting water protection.",
   },
   {
     image: "/projects/project-7.jpg",
-    title: "Bathroom Waterproofing",
-    category: "Wet Area",
+    title: "Injection Grouting & Crack Filling",
+    category: "Injection Grouting",
     description:
-      "Complete wet-area waterproofing to reduce seepage and moisture-related problems.",
+      "Injection grouting and crack filling work carried out to treat cracks and reduce active water leakage.",
   },
   {
     image: "/projects/project-8.jpg",
-    title: "Civil Repair Work",
-    category: "Civil Repair",
+    title: "Break Bat Work",
+    category: "Civil & Waterproofing Work",
     description:
-      "Concrete and civil repair work focused on restoring damaged building surfaces.",
+      "Break bat work carried out as part of surface preparation and waterproofing treatment.",
   },
   {
     image: "/projects/project-9.jpg",
-    title: "Structural Rehabilitation",
-    category: "Structural Repair",
+    title: "Kemperol 1K Waterproofing",
+    category: "Kemperol 1K",
     description:
-      "Repair and rehabilitation solutions for damaged concrete and structural elements.",
+      "Kemperol 1K waterproofing application providing a protective waterproof layer for the treated surface.",
   },
   {
     image: "/projects/project-10.jpg",
-    title: "Protective Coating",
-    category: "Protective Coating",
+    title: "HDPE Waterproofing",
+    category: "HDPE Membrane",
     description:
-      "Protective coating systems applied to help improve the durability of concrete surfaces.",
+      "HDPE waterproofing work completed for durable protection against moisture and water penetration.",
   },
 ];
+
 
 export default function ProjectsPage() {
   return (
