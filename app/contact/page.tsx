@@ -8,7 +8,7 @@ import {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-white text-[#12334b]">
+    <main className="min-h-screen w-full overflow-x-hidden bg-white text-[#12334b]">
 
       {/* ================= HERO ================= */}
       <section className="relative overflow-hidden bg-[#0b1424] py-24 md:py-32">
@@ -38,14 +38,14 @@ export default function ContactPage() {
 
 
       {/* ================= CONTACT SECTION ================= */}
-      <section className="py-20 md:py-24">
+      <section className="w-full overflow-hidden py-20 md:py-24">
 
         <div className="mx-auto max-w-7xl px-6">
 
-          <div className="grid gap-10 lg:grid-cols-2">
+          <div className="grid w-full min-w-0 grid-cols-1 gap-10 lg:grid-cols-2">
 
             {/* ================= LEFT SIDE ================= */}
-            <div>
+            <div className="min-w-0">
 
               <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#f58220]">
                 Get In Touch
@@ -126,7 +126,7 @@ export default function ContactPage() {
 
                     <a
                       href="mailto:sharavanienterprises2222@gmail.com"
-                      className="mt-2 inline-block font-semibold text-[#f58220]"
+                      className="mt-2 inline-block max-w-full break-all font-semibold text-[#f58220]"
                     >
                       sharavanienterprises2222@gmail.com
                     </a>
@@ -166,7 +166,7 @@ export default function ContactPage() {
 
 
             {/* ================= RIGHT SIDE FORM ================= */}
-            <div className="rounded-3xl bg-[#f8fafc] p-6 shadow-lg md:p-8">
+            <div className="w-full min-w-0 rounded-3xl bg-[#f8fafc] p-6 shadow-lg md:p-8">
 
               <h2 className="text-2xl font-bold text-[#12334b]">
                 Request a Free Consultation
@@ -266,7 +266,7 @@ export default function ContactPage() {
 
 
       {/* ================= WHATSAPP CTA ================= */}
-      <section className="bg-[#12334b] py-16">
+      <section className= "w-full overflow-hidden bg-[#12334b] py-16">
 
         <div className="mx-auto max-w-5xl px-6 text-center">
 

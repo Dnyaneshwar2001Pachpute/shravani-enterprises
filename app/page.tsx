@@ -42,11 +42,11 @@ export default function Home() {
 
           {/* Call button */}
           <a 
-          href="tel:+919881565282"
+          href="tel:+919970187373"
           className="inline-flex items-center justify-center rounded-md border-2 border-sky-500
           bg-white px-5 py-3 text-sm font-bold text-[#12304a] transition hover:bg-sky-50"
           >
-            Call +919881565282
+            Call +919970187373
           </a>
         </div>
       </div>

@@ -20,7 +20,7 @@ const projects = [
   },
   {
     image: "/projects/project-3.jpg",
-    title: "HDPE Waterproofing",
+    title: "HDPE Waterproofing.",
     category: "HDPE Membrane",
     description:
       "HDPE waterproofing membrane installation providing durable protection against water penetration.",
@@ -69,10 +69,10 @@ const projects = [
   },
   {
     image: "/projects/project-10.jpg",
-    title: "HDPE Waterproofing",
-    category: "HDPE Membrane",
+    title: "PU Coating",
+    category: "Protective Coasting",
     description:
-      "HDPE waterproofing work completed for durable protection against moisture and water penetration.",
+      "High-performance PU coating providing a seamless, durable and waterproof protective layer for concrete and other surfaces.",
   },
 ];
 
